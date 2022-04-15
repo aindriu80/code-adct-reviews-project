@@ -1,19 +1,22 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import Review from './Review'
-import { FaGithubSquare } from 'react-icons/fa'
-import './App.css'
+import { useState } from 'react';
+import Review from './Review';
+
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h2>
-        Reviews Project
-        <br />
-        <FaGithubSquare className="icon" />
-      </h2>
-    </div>
-  )
+    <section className='App'>
+      <main>
+        <div className='container'>
+          <div className='title'>
+            <h2>Our Reviews</h2>
+            <div className='underline'></div>
+            <Review />
+          </div>
+        </div>
+      </main>
+    </section>
+  );
 }
 
-export default App
+export default App;
